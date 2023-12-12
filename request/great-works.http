@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/great-work/list
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/great-work/list/books
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/great-work/list/visual-artworks/by-medium/Fresco
+Accept: application/json

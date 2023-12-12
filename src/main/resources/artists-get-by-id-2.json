@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "name": "Johann Wolfgang von Goethe",
+  "yearBorn": 1749,
+  "yearDied": 1832,
+  "greatWorks": [
+    {
+      "id": 3,
+      "name": "Die Leiden des jungen Werthers",
+      "yearFinished": 1774,
+      "pages": 165
+    },
+    {
+      "id": 4,
+      "name": "Faust",
+      "yearFinished": 1808,
+      "pages": 136
+    }
+  ]
+}

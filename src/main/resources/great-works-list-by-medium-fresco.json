@@ -1,0 +1,26 @@
+[
+  {
+    "id": 2,
+    "name": "The Creation of Adam",
+    "yearFinished": 1512,
+    "artist": {
+      "id": 1,
+      "name": "Michelangelo",
+      "yearBorn": 1475,
+      "yearDied": 1564
+    },
+    "medium": "Fresco"
+  },
+  {
+    "id": 16,
+    "name": "The Last Supper",
+    "yearFinished": 1498,
+    "artist": {
+      "id": 8,
+      "name": "Leonardo da Vinci",
+      "yearBorn": 1452,
+      "yearDied": 1519
+    },
+    "medium": "Fresco"
+  }
+]

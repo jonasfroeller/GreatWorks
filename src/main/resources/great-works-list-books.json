@@ -1,0 +1,62 @@
+[
+  {
+    "id": 13,
+    "name": "Nineteen Eighty-Four",
+    "yearFinished": 1949,
+    "artist": {
+      "id": 6,
+      "name": "George Orwell",
+      "yearBorn": 1903,
+      "yearDied": 1950
+    },
+    "pages": 328
+  },
+  {
+    "id": 14,
+    "name": "Brave New World",
+    "yearFinished": 1931,
+    "artist": {
+      "id": 7,
+      "name": "Aldous Huxley",
+      "yearBorn": 1894,
+      "yearDied": 1963
+    },
+    "pages": 311
+  },
+  {
+    "id": 3,
+    "name": "Die Leiden des jungen Werthers",
+    "yearFinished": 1774,
+    "artist": {
+      "id": 2,
+      "name": "Johann Wolfgang von Goethe",
+      "yearBorn": 1749,
+      "yearDied": 1832
+    },
+    "pages": 165
+  },
+  {
+    "id": 4,
+    "name": "Faust",
+    "yearFinished": 1808,
+    "artist": {
+      "id": 2,
+      "name": "Johann Wolfgang von Goethe",
+      "yearBorn": 1749,
+      "yearDied": 1832
+    },
+    "pages": 136
+  },
+  {
+    "id": 12,
+    "name": "Animal Farm",
+    "yearFinished": 1945,
+    "artist": {
+      "id": 6,
+      "name": "George Orwell",
+      "yearBorn": 1903,
+      "yearDied": 1950
+    },
+    "pages": 132
+  }
+]

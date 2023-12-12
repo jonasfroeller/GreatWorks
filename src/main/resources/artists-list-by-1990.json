@@ -1,0 +1,56 @@
+[
+  {
+    "id": 3,
+    "name": "Pablo Picasso",
+    "yearBorn": 1881,
+    "yearDied": 1973,
+    "greatWorks": [
+      {
+        "id": 5,
+        "name": "Guernica",
+        "yearFinished": 1937,
+        "medium": "Oil"
+      },
+      {
+        "id": 6,
+        "name": "Les Demoiselles d Avignon",
+        "yearFinished": 1907,
+        "medium": "Oil"
+      },
+      {
+        "id": 7,
+        "name": "Woman with Green Hat",
+        "yearFinished": 1947,
+        "medium": "Oil"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Klemens Brosch",
+    "yearBorn": 1894,
+    "yearDied": 1926,
+    "greatWorks": [
+      {
+        "id": 11,
+        "name": "Das Krokodil auf der Mondscheibe",
+        "yearFinished": 1911,
+        "medium": "Ink"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Aldous Huxley",
+    "yearBorn": 1894,
+    "yearDied": 1963,
+    "greatWorks": [
+      {
+        "id": 14,
+        "name": "Brave New World",
+        "yearFinished": 1931,
+        "pages": 311
+      }
+    ]
+  }
+]
