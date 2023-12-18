@@ -1,4 +1,5 @@
-CREATE TABLE artist (
+/*
+ CREATE TABLE artist (
     id BIGINT NOT NULL,
     name VARCHAR(50) NOT NULL,
     year_born INTEGER NOT NULL,
@@ -43,3 +44,4 @@ INSERT INTO great_work(name, year_finished, work_type, medium, pages, artist_id)
 INSERT INTO great_work(name, year_finished, work_type, medium, pages, artist_id) VALUES ('Brave New World', 1931, 'Literature', null, 311, 7);
 INSERT INTO great_work(name, year_finished, work_type, medium, pages, artist_id) VALUES ('Mona Lisa', 1503, 'Visual', 'Oil', null, 8);
 INSERT INTO great_work(name, year_finished, work_type, medium, pages, artist_id) VALUES ('The Last Supper', 1498, 'Visual', 'Fresco', null, 8);
+*/
