@@ -11,4 +11,8 @@ import jakarta.persistence.Table;
 public class Literature extends GreatWork {
     @Column(length = 7)
     private int pages;
+
+    public int getPages() {
+        return pages;
+    }
 }

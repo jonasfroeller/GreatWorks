@@ -22,4 +22,20 @@ public abstract class GreatWork {
     private String name;
     @Column(name = "year_finished")
     private int yearFinished;
+
+    public Long getId() {
+        return id;
+    }
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYearFinished() {
+        return yearFinished;
+    }
 }

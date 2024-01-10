@@ -11,4 +11,8 @@ import jakarta.persistence.Table;
 public class VisualArtwork extends GreatWork {
     @Column(length = 30)
     private String medium; // (i.e. the material used to create artwork)
+
+    public String getMedium() {
+        return medium;
+    }
 }

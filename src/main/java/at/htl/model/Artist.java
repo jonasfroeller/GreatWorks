@@ -26,4 +26,24 @@ public class Artist {
     private int yearBorn;
     @Column(name = "year_died")
     private int yearDied;
+
+    public Long getId() {
+        return id;
+    }
+
+    public List<GreatWork> getGreatWorks() {
+        return greatWorks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getYearBorn() {
+        return yearBorn;
+    }
+
+    public int getYearDied() {
+        return yearDied;
+    }
 }
