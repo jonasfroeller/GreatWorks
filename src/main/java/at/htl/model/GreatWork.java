@@ -1,5 +1,6 @@
 package at.htl.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
@@ -7,7 +8,7 @@ import jakarta.persistence.*;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "work_type", discriminatorType = DiscriminatorType.STRING)
 @NamedQuery(name = GreatWork.QUERY_FIND_ALL_SORTED_BY_YEAR_FINISHED_ASC, query = "SELECT gw FROM GreatWork gw ORDER BY gw.yearFinished ASC")
-public abstract class GreatWork {
+public class GreatWork {
     public static final String QUERY_FIND_ALL_SORTED_BY_YEAR_FINISHED_ASC = "GreatWork.GET.ALL.BY(YEAR_FINISHED.ASC)";
     public static final String QUERY_FIND_ALL_VISUAL_ARTWORKS_BY_MEDIUM = "GreatWork.GET.ALL.VISUAL_ARTWORKS.BY(MEDIUM)";
     public static final String QUERY_FIND_ALL_LITERATURE_SORTED_BY_PAGE_NUMBER_ASC = "GreatWork.GET.ALL.LITERATURE.BY(PAGE_NUMBER.ASC)";
@@ -17,6 +18,7 @@ public abstract class GreatWork {
     private Long id;
 
     @ManyToOne
+    @JsonIgnoreProperties({"greatWorks"})
     private Artist artist;
 
     private String name;

@@ -16,14 +16,10 @@ public class ArtistRepository {
     EntityManager entityManager;
 
     public List<Artist> getAllArtistsByYear(int year) {
-        try {
-            TypedQuery<Artist> query = this.entityManager.createNamedQuery(Artist.QUERY_FIND_ALL, Artist.class);
-            query.setParameter("year", year);
+        TypedQuery<Artist> query = this.entityManager.createNamedQuery(Artist.QUERY_FIND_ALL, Artist.class);
+        query.setParameter("year", year);
 
-            return query.getResultList();
-        } catch (NoResultException e) {
-            throw new NotFoundException(String.format("No artists found for year %d!", year));
-        }
+        return query.getResultList(); // list is empty if there are no results
     }
 
     public Artist getArtistById(int id) {
@@ -32,7 +28,6 @@ public class ArtistRepository {
             query.setParameter("id", id);
 
             return query.getSingleResult();
-
         } catch (NoResultException e) {
             throw new NotFoundException(String.format("No artist found with id %d!", id));
         }

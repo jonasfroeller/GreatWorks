@@ -6,9 +6,7 @@ import at.htl.model.VisualArtwork;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.NoResultException;
 import jakarta.persistence.TypedQuery;
-import jakarta.ws.rs.NotFoundException;
 
 import java.util.List;
 
@@ -22,14 +20,10 @@ public class GreatWorkRepository {
     }
 
     public List<VisualArtwork> getAllVisualArtworksByMedium(String medium) {
-        try {
-            TypedQuery<VisualArtwork> query = entityManager.createNamedQuery(GreatWork.QUERY_FIND_ALL_VISUAL_ARTWORKS_BY_MEDIUM, VisualArtwork.class);
-            query.setParameter("medium", medium);
+        TypedQuery<VisualArtwork> query = entityManager.createNamedQuery(GreatWork.QUERY_FIND_ALL_VISUAL_ARTWORKS_BY_MEDIUM, VisualArtwork.class);
+        query.setParameter("medium", medium);
 
-            return query.getResultList();
-        } catch (NoResultException e) {
-            throw new NotFoundException(String.format("No visual artworks found for medium %s!", medium));
-        }
+        return query.getResultList(); // list is empty if there are no results
     }
 
     public List<Literature> getAllLiteratureSortedAscendingByPageNumber() {

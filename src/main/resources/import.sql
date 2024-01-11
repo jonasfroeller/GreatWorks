@@ -1,23 +1,3 @@
-CREATE TABLE artist (
-    id BIGINT NOT NULL,
-    name VARCHAR(50) NOT NULL,
-    year_born INTEGER NOT NULL,
-    year_died INTEGER NOT NULL,
-    CONSTRAINT pk_artist PRIMARY KEY (id)
-);
-
-CREATE TABLE great_work (
-    id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
-    name VARCHAR(50) NOT NULL,
-    year_finished INTEGER NOT NULL,
-    work_type VARCHAR(50) NOT NULL,
-    medium VARCHAR(50),
-    pages INTEGER,
-    artist_id BIGINT NOT NULL,
-    CONSTRAINT pk_great_work PRIMARY KEY (id),
-    CONSTRAINT fk_great_work_artist FOREIGN KEY (artist_id) REFERENCES artist(id)
-);
-
 INSERT INTO artist(id, name, year_born, year_died) VALUES (1, 'Michelangelo', 1475, 1564);
 INSERT INTO artist(id, name, year_born, year_died) VALUES (2, 'Johann Wolfgang von Goethe', 1749, 1832);
 INSERT INTO artist(id, name, year_born, year_died) VALUES (3, 'Pablo Picasso', 1881, 1973);
